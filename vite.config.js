@@ -1,7 +1,12 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [vue()],
-})
+// Cambia esto por el nombre de tu repositorio en GitHub
+const repoName = "goikode-multilang";
+
+export default defineConfig(({ mode }) => {
+  return {
+    base: mode === "production-gh" ? `/${repoName}/` : "/",
+    plugins: [vue()],
+  };
+});
