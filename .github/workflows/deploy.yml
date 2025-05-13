@@ -36,6 +36,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dlist
+          artifact_name: dlist-${{ matrix.node-version }}
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4.0.5
+        with:
+          artifact_name: dlist-18.x
