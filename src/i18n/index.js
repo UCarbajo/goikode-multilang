@@ -6,6 +6,7 @@ const es = {
     home: "Inicio",
     about: "Sobre Nosotros",
     contacto: "Contacto",
+    noticias: "Noticias",
   },
   home: {
     welcome: "Bienvenido a Goikode",
@@ -52,6 +53,28 @@ const es = {
         'El nombre "Goikode" viene de la combinación de "goiko" (que significa "superior" en euskera) y "code" (código en inglés). Aunque nuestro CEO insiste en que se le ocurrió mientras comía un pintxo de tortilla.',
     },
   },
+  contacto: {
+    title: "Contacto",
+    name: "Nombre",
+    email: "Correo",
+    message: "Mensaje",
+    submit: "Enviar",
+  },
+  news: {
+    title: "Noticias",
+    items: {
+      1: {
+        title: "Noticia 1",
+        description: "Esto es la descripción de la primera noticia",
+        date: "13/05/2025",
+      },
+      2: {
+        title: "Noticia 2",
+        description: "Esto es la descripción de la primera noticia",
+        date: "12/05/2025",
+      },
+    },
+  },
   footer: {
     rights: "Todos los derechos reservados.",
   },
@@ -66,6 +89,7 @@ const en = {
     home: "Home",
     about: "About Us",
     contacto: "Contact",
+    noticias: "News",
   },
   home: {
     welcome: "Welcome to Goikode",
@@ -112,6 +136,28 @@ const en = {
         'The name "Goikode" comes from the combination of "goiko" (which means "superior" in Basque) and "code" (in English). Although our CEO insists that it came to him while eating a Spanish omelette pintxo.',
     },
   },
+  contacto: {
+    title: "Contact",
+    name: "Name",
+    email: "Email",
+    message: "Message",
+    submit: "Submit",
+  },
+  news: {
+    title: "News",
+    items: {
+      1: {
+        title: "News 1",
+        description: "This is the description of the first news",
+        date: "13/05/2025",
+      },
+      2: {
+        title: "News 2",
+        description: "This is the description of the second news",
+        date: "12/05/2025",
+      },
+    },
+  },
   footer: {
     rights: "All rights reserved.",
   },
@@ -126,6 +172,7 @@ const eu = {
     home: "Hasiera",
     about: "Guri Buruz",
     contacto: "Kontaktatu",
+    noticias: "Albisteak",
   },
   home: {
     welcome: "Ongi etorri Goikode-ra",
@@ -172,8 +219,28 @@ const eu = {
         '"Goikode" izena "goiko" (euskaraz "gorenekoa" esan nahi duena) eta "code" (ingelesez kodea) konbinaziotik dator. Nahiz eta gure CEOk dio tortilla pintxo bat jaten ari zela bururatu zitzaiola.',
     },
   },
-  contacto: {},
-
+  contacto: {
+    title: "Kontaktatu",
+    name: "Izena",
+    email: "Posta elektronikoa",
+    message: "Mezua",
+    submit: "Bidali",
+  },
+  news: {
+    title: "Albisteak",
+    items: {
+      1: {
+        title: "Albistea 1",
+        description: "Hau da lehen albistearen deskribapena",
+        date: "13/05/2025",
+      },
+      2: {
+        title: "Albistea 2",
+        description: "Hau da bigarren albistearen deskribapena",
+        date: "12/05/2025",
+      },
+    },
+  },
   footer: {
     rights: "Eskubide guztiak erreserbatuak.",
   },

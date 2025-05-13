@@ -9,6 +9,7 @@
       <nav>
         <router-link to="/">{{ $t("nav.home") }}</router-link>
         <router-link to="/about">{{ $t("nav.about") }}</router-link>
+        <router-link to="/noticias">{{ $t("nav.noticias") }}</router-link>
         <router-link to="/contacto">{{ $t("nav.contacto") }} </router-link>
         <LanguageSelector class="language-selector" />
       </nav>
