@@ -8,14 +8,36 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
+      # 1) Clona tu repo
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      # 2) Instala Node.js (elige la versión que necesites)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      # 3) Instala dependencias
+      - name: Install dependencies
+        run: npm ci
+        # si usas yarn:
+        # run: yarn install --frozen-lockfile
+
+      # 4) Build de la aplicación Vue
+      - name: Build app
+        run: npm run build
+        # o yarn build
+
+      # 5) Deploy de la carpeta 'dist/'
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: gh-pages
-          folder: .
+          branch: gh-pages # rama destino
+          folder: dist # carpeta que quieres publicar
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_PATH }}
+          # Puedes usar el token que GitHub pone por defecto:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # (no hace falta crear un secret propio)
