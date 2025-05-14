@@ -4,6 +4,7 @@
 
     <main>
       <router-view />
+      <router-view name="news" />
     </main>
 
     <AppFooter />
