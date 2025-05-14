@@ -17,3 +17,5 @@ jobs:
         with:
           branch: gh-pages
           folder: .
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_PATH }}
