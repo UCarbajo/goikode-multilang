@@ -6,6 +6,7 @@ const es = {
     home: "Inicio",
     about: "Sobre Nosotros",
     contacto: "Contacto",
+    noticias: "Noticias",
   },
   home: {
     welcome: "Bienvenido a Goikode",
@@ -52,6 +53,38 @@ const es = {
         'El nombre "Goikode" viene de la combinación de "goiko" (que significa "superior" en euskera) y "code" (código en inglés). Aunque nuestro CEO insiste en que se le ocurrió mientras comía un pintxo de tortilla.',
     },
   },
+  contact: {
+    title: "Contacto",
+    description:
+      "Completa el siguiente formulario y nos pondremos en contacto contigo.",
+    name: "Nombre",
+    namePlaceholder: "Ingresa tu nombre",
+    email: "Correo Electrónico",
+    emailPlaceholder: "Ingresa tu correo electrónico",
+    subject: "Asunto",
+    subjectPlaceholder: "Ingresa el asunto",
+    message: "Mensaje",
+    messagePlaceholder: "Escribe tu mensaje",
+    submit: "Enviar",
+  },
+  noticias: {
+    titulo: "Noticias",
+    noticia1: {
+      titulo: "Noticia 1",
+      descripcion:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    noticia2: {
+      titulo: "Noticia 2",
+      descripcion:
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    noticia3: {
+      titulo: "Noticia 3",
+      descripcion:
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    },
+  },
   footer: {
     rights: "Todos los derechos reservados.",
   },
@@ -66,6 +99,7 @@ const en = {
     home: "Home",
     about: "About Us",
     contacto: "Contact",
+    noticias: "News",
   },
   home: {
     welcome: "Welcome to Goikode",
@@ -112,6 +146,38 @@ const en = {
         'The name "Goikode" comes from the combination of "goiko" (which means "superior" in Basque) and "code" (in English). Although our CEO insists that it came to him while eating a Spanish omelette pintxo.',
     },
   },
+  contact: {
+    title: "Contact",
+    description:
+      "Fill out the following form and we will get in touch with you.",
+    name: "Name",
+    namePlaceholder: "Enter your name",
+    email: "Email",
+    emailPlaceholder: "Enter your email",
+    subject: "Subject",
+    subjectPlaceholder: "Enter the subject",
+    message: "Message",
+    messagePlaceholder: "Write your message",
+    submit: "Send",
+  },
+  noticias: {
+    titulo: "News",
+    noticia1: {
+      titulo: "News 1",
+      descripcion:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    noticia2: {
+      titulo: "News 2",
+      descripcion:
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    noticia3: {
+      titulo: "News 3",
+      descripcion:
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    },
+  },
   footer: {
     rights: "All rights reserved.",
   },
@@ -126,6 +192,7 @@ const eu = {
     home: "Hasiera",
     about: "Guri Buruz",
     contacto: "Kontaktatu",
+    noticias: "Albisteak",
   },
   home: {
     welcome: "Ongi etorri Goikode-ra",
@@ -172,8 +239,38 @@ const eu = {
         '"Goikode" izena "goiko" (euskaraz "gorenekoa" esan nahi duena) eta "code" (ingelesez kodea) konbinaziotik dator. Nahiz eta gure CEOk dio tortilla pintxo bat jaten ari zela bururatu zitzaiola.',
     },
   },
-  contacto: {},
-
+  contact: {
+    title: "Kontaktua",
+    description:
+      "Hurrengo inprimakia bete eta zurekin harremanetan jarriko gara.",
+    name: "Izena",
+    namePlaceholder: "Idatzi zure izena",
+    email: "Posta Elektronikoa",
+    emailPlaceholder: "Idatzi zure posta elektronikoa",
+    subject: "Gaia",
+    subjectPlaceholder: "Idatzi gaia",
+    message: "Mezua",
+    messagePlaceholder: "Idatzi zure mezua",
+    submit: "Bidali",
+  },
+  noticias: {
+    titulo: "Albisteak",
+    noticia1: {
+      titulo: "Albistea 1",
+      descripcion:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    noticia2: {
+      titulo: "Albistea 2",
+      descripcion:
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    noticia3: {
+      titulo: "Albistea 3",
+      descripcion:
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    },
+  },
   footer: {
     rights: "Eskubide guztiak erreserbatuak.",
   },
