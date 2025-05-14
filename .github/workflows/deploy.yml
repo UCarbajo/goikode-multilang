@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Vue App to GitHub Pages
 
 on:
   push:
@@ -6,15 +6,27 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Puedes ajustar la versión de Node.js según tus necesidades
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project with Vite
+        run: npm run build
+        # Asegúrate de tener definido en tu package.json el comando "build": "vite build"
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: gh-pages
-          folder: .
-          token: ${{ secrets.MY_PAT }}
+          branch: gh-pages    # La rama en la que se publicará el sitio
+          folder: dist        # Carpeta de salida generada por Vite
+          token: ${{ secrets.MY_PAT }}  # Tu token personal de acceso o usar GITHUB_TOKEN si es un repositorio público/privado configurado
