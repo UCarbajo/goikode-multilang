@@ -8,9 +8,6 @@ const routes = [
   {
     path: "/",
     name: "home",
-    // Aquí usamos "components" en lugar de "component". Se asigna:
-    // • default: para el router-view sin nombre (HomeView)
-    // • news: para el router-view con name="news" (NoticiasView)
     components: {
       default: HomeView,
       news: NoticiasView,

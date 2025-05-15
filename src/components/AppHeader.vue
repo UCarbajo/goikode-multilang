@@ -1,11 +1,13 @@
 <template>
   <header>
     <div class="container">
-      <h1 class="logo">
-        <span class="logo-bracket"></span>goikode<span class="logo-bracket"
-          >></span
-        >
-      </h1>
+      <router-link to="/" class="logo">
+        <h1 class="logo">
+          <span class="logo-bracket"><</span>goikode<span class="logo-bracket"
+            >></span
+          >
+        </h1>
+      </router-link>
       <nav>
         <router-link to="/">{{ $t("nav.home") }}</router-link>
         <router-link to="/about">{{ $t("nav.about") }}</router-link>
@@ -43,6 +45,8 @@ header .container {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  color: white !important;
+  text-decoration: none;
 }
 
 .logo-bracket {
